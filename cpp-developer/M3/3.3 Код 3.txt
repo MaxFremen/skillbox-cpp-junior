@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    /*
+    std::string userName = "Mikhail";
+    std::cout << "Hello, " << userName << "!\n";
+    */
+
+    //----------------------------------------------
+
+    std::string userName;
+    std::cout << "My name is: ";
+    std::cin >> userName;
+    std::cout << "Hello, " << userName << "!\n";
+}

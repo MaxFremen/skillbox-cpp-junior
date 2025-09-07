@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int productCost = 6400;
+    int deliveryCost = 350;
+    int discount = 700;
+
+    int price = productCost + deliveryCost - discount;
+
+    std::cout << "Стоимость товара: " << productCost << "\n";
+    std::cout << "Стоимость доставки: " << deliveryCost << "\n";
+    std::cout << "Скидка: " << discount << "\n";
+    std::cout << "---------"
+    std::cout << "Итого: " << price << "\n";
+}

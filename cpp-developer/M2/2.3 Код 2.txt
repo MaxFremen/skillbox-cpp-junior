@@ -1,0 +1,6 @@
+int main() {
+    int someVariable = 42;
+    //std::cout << someVariable;
+    //std::cout << "someVariable";
+    std::cout << "Значение someVariable: " << someVariable << "\n";
+}

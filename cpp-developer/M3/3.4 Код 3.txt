@@ -1,0 +1,40 @@
+#include <iostream>
+
+int main() {
+    std::cout << "Бамбук VS Вредители!\n";
+
+    int startHeight = 100;
+    int growth = 50;
+    int losses = 20;
+
+    int currentHeight = startHeight;
+
+    // Вариант 1
+    /*
+    currentHeight += growth;
+    currentHeight -= losses;
+
+    currentHeight += growth;
+    currentHeight -= losses;
+
+    currentHeight += growth / 2;
+
+    std::cout << "Высота бамбука к середине 3 дня: " << currentHeight << ".\n";
+    */
+
+    //--------------------------------------------------------------------------------
+    // Вариант 2
+    /*
+    int thirdDayHeight = startHeight + ((growth - losses) * 2 + (growth / 2));
+
+    std::cout << "Высота бамбука к середине 3 дня: " << thirdDayHeight << ".\n";
+    */
+
+    //--------------------------------------------------------------------------------
+    // Вариант 3
+    int thirdDayGrowth = growth * 2 + growth / 2;
+    int thirdDayLosses = losses * 2;
+    int thirdDayHeight = startHeight + thirdDayGrowth - thirdDayLosses;
+
+    std::cout << "Высота бамбука к середине 3 дня: " << thirdDayHeight << ".\n";
+}

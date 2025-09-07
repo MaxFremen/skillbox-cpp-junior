@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main() {
+    int turnNumber = 9;
+    int level = 3;
+    int leftHandItem = 1;
+    int rightHandItem = 3;
+    int headItem = 3;
+    //int curse = 3;
+    int curse = 4;
+    int strength = level + leftHandItem + rightHandItem + headItem - curse;
+
+    std::cout << "===================\n";
+    std::cout << "Манчкин. Ход" << turnNumber << "\n";
+    std::cout << "===================\n";
+    std::cout << "Гарри Поттер, " << level << " (" << strength << ")\n";
+    std::cout << "===================\n";
+    std::cout << "Никнейм: Гарри Поттер\n";
+    std::cout << "Уровень: " << level << "\n";
+    std::cout << "Сила: " << strength << "\n";
+    std::cout << "-------------------\n";
+    std::cout << "Предметы:\n";
+    std::cout << "-------------------\n";
+    std::cout << "Левая рука: +" << leftHandItem << "\n";
+    std::cout << "Правая рука: +" << rightHandItem << "\n";
+    std::cout << "Голова: +" << headItem << "\n";
+    std::cout << "-------------------\n";
+    std::cout << "Проклятия: -" << curse << "\n";
+}
